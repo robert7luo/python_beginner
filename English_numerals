@@ -1,0 +1,10 @@
+def th(x):
+    if x[-1] == '1':
+        return (x+'st')
+    elif x[-1] == '2':
+        return (x+'nd')
+    elif x[-1] == '3':
+        return (x+'rd')
+    else:
+        return (x+'th')
+print th('31')
