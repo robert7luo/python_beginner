@@ -1,0 +1,64 @@
+#error 1:#
+
+booklist = ['novel','','newspaper']
+
+for listname in booklist:
+    if listname != '':
+        print listname
+    else:
+        booklist.remove('')
+print booklist
+---------------------------------
+novel
+['novel', 'newspaper']
+
+
+
+
+#error 2:#
+
+booklist = ['novel','','newspaper']
+
+for listname in booklist:
+    if listname != '':
+        print listname
+    if listname == '':
+        booklist.remove('')
+print booklist
+---------------------------------
+novel
+['novel', 'newspaper']
+
+
+#solusion 1:#
+
+booklist = ['novel','','newspaper']
+
+for listname in booklist:
+    if listname != '':
+        print listname
+    else: 
+        print 'error'
+print booklist
+---------------------------------
+novel
+error
+newspaper
+['novel', '', 'newspaper']
+
+
+
+#solusion 2:#
+
+booklist = ['novel','','newspaper']
+
+for listname in booklist:
+    if listname != '':
+        print listname
+        if listname == '':
+            booklist.remove('')
+print booklist
+---------------------------------
+novel
+newspaper
+['novel', '', 'newspaper']
